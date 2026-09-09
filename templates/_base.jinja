@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Gabarit TP Web 3</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://www.cegepgarneau.ca/favicon.ico">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>Gabarit TP Web 3</h1>
+    </header>
+    <main>
+        <h2>{{ titre }}</h2>
+
+        {% block contenu %}
+            <p>Voici une valeur par défaut</p>
+        {% endblock %}
+
+    </main>
+
+    <footer>
+        <a href="https://jinja.palletsprojects.com/en/stable/templates/" target="_blank" title="jinja.palletsprojects.com">
+            Documentation officielle de Jinja
+        </a>
+    </footer>
+</body>
