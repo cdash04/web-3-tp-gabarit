@@ -27,8 +27,6 @@ if __name__ == "__main__":
                         set_num = int(row[8]) if row[8] and row[8].strip() else None
                         types = row[9].strip() if row[9] else None
                         supertype = row[10].strip() if row[10] else None
-                        level = int(row[12]) if row[12] and row[12].strip() else None
-                        hp = int(row[13]) if row[13] and row[13].strip() else None
                         evolvesFrom = row[14].strip() if row[14] else None
                         evolvesTo = row[15].strip() if row[15] else None
                         rarity = row[21].strip() if row[21] else None
@@ -53,11 +51,11 @@ if __name__ == "__main__":
                         INSERT INTO pokemon_card (
                             id, card_set, series, publisher, generation, release_date, 
                             artist, name, set_num, pokedex_numb, types, supertype, 
-                            level, hp, evolvesFrom, evolvesTo, rarity
+                            evolvesFrom, evolvesTo, rarity
                         ) VALUES (
                             %s, %s, %s, %s, %s, %s, 
                             %s, %s, %s, %s, %s, %s, 
-                            %s, %s, %s, %s, %s
+                            %s, %s, %s
                         )
                         """
 
@@ -76,8 +74,6 @@ if __name__ == "__main__":
                                 pokedex_numb,
                                 types,
                                 supertype,
-                                level,
-                                hp,
                                 evolvesFrom,
                                 evolvesTo,
                                 rarity,
