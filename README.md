@@ -1,11 +1,13 @@
 # web-3-tp-gabarit
 
-Gabarit d'application Flask pour le cours de Web 3 
+Gabarit d'application Flask pour le cours de Web 3
 
-Pour rouler l'application:
+1. copier/coller le fichier example.env pour créer un fichier .env
 
-`docker compose up --build -d`
+2. Pour rouler l'application:
 
-Pour rouler le script d'initialisation de cartes pokémons:
+    `docker compose up --build -d`
 
-`docker compose exec app python -m scripts.init_pokemon_card`
+3. Pour rouler le script d'initialisation de cartes pokémons:
+
+    `docker compose exec app python -m scripts.init_pokemon_card`
